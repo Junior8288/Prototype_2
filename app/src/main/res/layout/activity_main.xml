@@ -14,18 +14,20 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="412dp"
+                android:layout_width="0dp"
                 android:layout_height="154dp"
                 android:contentDescription="Business banner"
                 android:scaleType="centerCrop"
@@ -56,8 +58,8 @@
 
                     <TextView
                         android:id="@+id/headerText"
-                        android:layout_width="364dp"
-                        android:layout_height="31dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:text="Bridge &amp; Anchor"
                         android:textAlignment="center"
@@ -71,8 +73,8 @@
 
                     <TextView
                         android:id="@+id/txtBusinessSubtitle"
-                        android:layout_width="361dp"
-                        android:layout_height="20dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:text="Insurance &amp; Financial Services"
                         android:textAlignment="center"
                         android:textColor="#718096"
@@ -97,9 +99,9 @@
                 app:cardBackgroundColor="#1769E0"
                 app:cardCornerRadius="26dp"
                 app:cardElevation="5dp"
-                app:layout_constraintTop_toBottomOf="@id/headerCard"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/headerCard">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -126,9 +128,9 @@
                         android:textColor="#FFFFFF"
                         android:textSize="27sp"
                         android:textStyle="bold"
-                        app:layout_constraintTop_toBottomOf="@id/txtWelcomeSmall"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/txtWelcomeSmall" />
 
                     <TextView
                         android:id="@+id/txtDescription"
@@ -138,9 +140,9 @@
                         android:text="@string/reliable_insurance_and_financial_solutions_designed_for_you_and_your_family"
                         android:textColor="#EAF2FF"
                         android:textSize="15sp"
-                        app:layout_constraintTop_toBottomOf="@id/txtWelcome"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/txtWelcome" />
 
                     <Button
                         android:id="@+id/btnRegister"
@@ -151,9 +153,9 @@
                         android:text="@string/get_started"
                         android:textColor="#1769E0"
                         android:textStyle="bold"
-                        app:layout_constraintTop_toBottomOf="@id/txtDescription"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/txtDescription" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -170,9 +172,9 @@
                 android:textColor="#172033"
                 android:textSize="21sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toBottomOf="@id/heroCard"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/heroCard" />
 
             <TextView
                 android:id="@+id/txtServicesSubtitle"
@@ -184,9 +186,9 @@
                 android:text="@string/quick_access_to_our_most_popular_services"
                 android:textColor="#718096"
                 android:textSize="14sp"
-                app:layout_constraintTop_toBottomOf="@id/txtServicesTitle"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/txtServicesTitle" />
 
 
             <com.google.android.material.card.MaterialCardView
@@ -194,7 +196,8 @@
                 android:layout_width="0dp"
                 android:layout_height="125dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="2dp"
@@ -258,9 +261,9 @@
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="2dp"
-                app:layout_constraintTop_toBottomOf="@id/cardServices"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/cardServices">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -286,9 +289,9 @@
                         android:text="We're here to help. Contact us directly."
                         android:textColor="#718096"
                         android:textSize="14sp"
-                        app:layout_constraintTop_toBottomOf="@id/txtNeedHelp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/txtNeedHelp" />
 
                     <Button
                         android:id="@+id/btnCall"
@@ -296,10 +299,10 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="14dp"
                         android:text="Call Us"
-                        app:layout_constraintTop_toBottomOf="@id/txtContactDescription"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtContactDescription" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -313,9 +316,9 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="18dp"
                 android:text="📍  Find Our Location"
-                app:layout_constraintTop_toBottomOf="@id/contactCard"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/contactCard" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/policyCard"
@@ -328,10 +331,10 @@
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="2dp"
-                app:layout_constraintTop_toBottomOf="@id/btnMap"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnMap">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -357,9 +360,9 @@
                         android:text="View our policies and learn more about our services."
                         android:textColor="#718096"
                         android:textSize="14sp"
-                        app:layout_constraintTop_toBottomOf="@id/policyTxt"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@id/policyTxt" />
 
                     <Button
                         android:id="@+id/btnPolicy"
@@ -367,10 +370,10 @@
                         android:layout_height="48dp"
                         android:layout_marginTop="14dp"
                         android:text="View Policy"
-                        app:layout_constraintTop_toBottomOf="@id/policyDescription"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/policyDescription" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -378,10 +381,6 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 
     </ScrollView>

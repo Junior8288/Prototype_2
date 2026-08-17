@@ -2,6 +2,7 @@ package com.example.prototype_2
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,44 +21,46 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        btnPolicy = findViewById(R.id.btnPolicy)
-
-        btnPolicy.setOnClickListener {
-            val intent = Intent(this, Policy_Page::class.java)
-            startActivity(intent)
+        findViewById<Button>(R.id.btnPolicy)?.let { btn ->
+            btnPolicy = btn
+            btnPolicy.setOnClickListener {
+                val intent = Intent(this, Policy_Page::class.java)
+                startActivity(intent)
+            }
         }
-        val btnWhatsapp = findViewById<FloatingActionButton>(R.id.btnWhatsapp)
 
-        btnWhatsapp.setOnClickListener {
+        findViewById<FloatingActionButton>(R.id.btnWhatsapp)?.setOnClickListener {
             val intent = Intent(this, Staff_Page::class.java)
             startActivity(intent)
         }
 
-        val btnChatbot = findViewById<FloatingActionButton>(R.id.btnChatbot)
-
-        btnChatbot.setOnClickListener {
+        findViewById<FloatingActionButton>(R.id.btnChatbot)?.setOnClickListener {
             val intent = Intent(this, Chatbot_Page::class.java)
             startActivity(intent)
         }
 
-        btnCall = findViewById(R.id.btnCall)
-
-        btnCall.setOnClickListener {
-            val intent = Intent(this, Chatbot_Page::class.java)
-            startActivity(intent)
+        findViewById<Button>(R.id.btnCall)?.let { btn ->
+            btnCall = btn
+            btnCall.setOnClickListener {
+                val intent = Intent(this, Contact_Us_Page::class.java)
+                startActivity(intent)
+            }
         }
 
-        btnRegister = findViewById(R.id.btnRegister)
-
-        btnRegister.setOnClickListener {
-            val intent = Intent(this, Register_Page::class.java)
-            startActivity(intent)
+        findViewById<Button>(R.id.btnRegister)?.let { btn ->
+            btnRegister = btn
+            btnRegister.setOnClickListener {
+                val intent = Intent(this, Register_Page::class.java)
+                startActivity(intent)
+            }
         }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        findViewById<View>(R.id.main)?.let { mainView ->
+            ViewCompat.setOnApplyWindowInsetsListener(mainView) { v, insets ->
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+                insets
+            }
         }
     }
 }
