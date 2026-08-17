@@ -54,6 +54,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<View>(R.id.cardLoan)?.setOnClickListener {
+            val intent = Intent(this, LoanApplicationActivity::class.java)
+            startActivity(intent)
+        }
+
 
         findViewById<View>(R.id.main)?.let { mainView ->
             ViewCompat.setOnApplyWindowInsetsListener(mainView) { v, insets ->
