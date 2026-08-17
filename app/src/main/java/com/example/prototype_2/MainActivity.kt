@@ -7,12 +7,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var btnPolicy: Button
-    private lateinit var btnChatbot: Button
-    private lateinit var btnWhatsapp: Button
     private lateinit var btnCall : Button
     private lateinit var btnRegister: Button
 
@@ -27,14 +26,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Policy_Page::class.java)
             startActivity(intent)
         }
-        btnWhatsapp = findViewById(R.id.btnWhatsapp)
+        val btnWhatsapp = findViewById<FloatingActionButton>(R.id.btnWhatsapp)
 
         btnWhatsapp.setOnClickListener {
             val intent = Intent(this, Staff_Page::class.java)
             startActivity(intent)
         }
 
-        btnChatbot = findViewById(R.id.btnChatbot)
+        val btnChatbot = findViewById<FloatingActionButton>(R.id.btnChatbot)
 
         btnChatbot.setOnClickListener {
             val intent = Intent(this, Chatbot_Page::class.java)
