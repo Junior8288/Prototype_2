@@ -24,7 +24,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imgBanner"
+                android:id="@+id/logo"
                 android:layout_width="412dp"
                 android:layout_height="154dp"
                 android:contentDescription="Business banner"
@@ -46,7 +46,7 @@
                 app:cardElevation="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgBanner"
+                app:layout_constraintTop_toBottomOf="@id/logo"
                 app:strokeColor="#E5E7EB"
                 app:strokeWidth="1dp">
 
@@ -110,7 +110,7 @@
                         android:id="@+id/txtWelcomeSmall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="WELCOME"
+                        android:text="@string/welcome"
                         android:textColor="#DCEBFF"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -122,7 +122,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:text="Protecting what matters most."
+                        android:text="@string/protecting_what_matters_most"
                         android:textColor="#FFFFFF"
                         android:textSize="27sp"
                         android:textStyle="bold"
@@ -135,7 +135,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Reliable insurance and financial solutions designed for you and your family."
+                        android:text="@string/reliable_insurance_and_financial_solutions_designed_for_you_and_your_family"
                         android:textColor="#EAF2FF"
                         android:textSize="15sp"
                         app:layout_constraintTop_toBottomOf="@id/txtWelcome"
@@ -148,7 +148,7 @@
                         android:layout_height="50dp"
                         android:layout_marginTop="18dp"
                         android:backgroundTint="#FFFFFF"
-                        android:text="Get Started"
+                        android:text="@string/get_started"
                         android:textColor="#1769E0"
                         android:textStyle="bold"
                         app:layout_constraintTop_toBottomOf="@id/txtDescription"
@@ -166,7 +166,7 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="18dp"
-                android:text="What can we help you with?"
+                android:text="@string/what_can_we_help_you_with"
                 android:textColor="#172033"
                 android:textSize="21sp"
                 android:textStyle="bold"
@@ -181,7 +181,7 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="18dp"
-                android:text="Quick access to our most popular services."
+                android:text="@string/quick_access_to_our_most_popular_services"
                 android:textColor="#718096"
                 android:textSize="14sp"
                 app:layout_constraintTop_toBottomOf="@id/txtServicesTitle"
@@ -193,14 +193,14 @@
                 android:id="@+id/cardServices"
                 android:layout_width="0dp"
                 android:layout_height="125dp"
-                android:layout_marginStart="18dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="8dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="2dp"
-                app:layout_constraintTop_toBottomOf="@id/txtServicesSubtitle"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtServicesSubtitle">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
