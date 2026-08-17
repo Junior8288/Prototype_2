@@ -11,6 +11,10 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
     private lateinit var btnPolicy: Button
+    private lateinit var btnChatbot: Button
+    private lateinit var btnWhatsapp: Button
+    private lateinit var btnCall : Button
+    private lateinit var btnRegister: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +27,33 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Policy_Page::class.java)
             startActivity(intent)
         }
+        btnWhatsapp = findViewById(R.id.btnWhatsapp)
 
+        btnWhatsapp.setOnClickListener {
+            val intent = Intent(this, Staff_Page::class.java)
+            startActivity(intent)
+        }
+
+        btnChatbot = findViewById(R.id.btnChatbot)
+
+        btnChatbot.setOnClickListener {
+            val intent = Intent(this, Chatbot_Page::class.java)
+            startActivity(intent)
+        }
+
+        btnCall = findViewById(R.id.btnCall)
+
+        btnCall.setOnClickListener {
+            val intent = Intent(this, Chatbot_Page::class.java)
+            startActivity(intent)
+        }
+
+        btnRegister = findViewById(R.id.btnRegister)
+
+        btnRegister.setOnClickListener {
+            val intent = Intent(this, Register_Page::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
