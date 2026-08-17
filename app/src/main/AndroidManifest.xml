@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Prototype_2" >
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".Contact_Us_Page"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Login_Page"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" >
             <intent-filter>
@@ -21,14 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Contact_Us_Page"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".Login_Page"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Register_Page"
             android:exported="false"
@@ -49,6 +50,14 @@
             android:name=".LoanApplicationActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ViewPdfActivity"
+            android:exported="false"
+            android:label="PDF Viewer" />
+        <activity
+            android:name=".TrackApplicationActivity"
+            android:exported="false"
+            android:label="Track Application" />
     </application>
 
 </manifest>

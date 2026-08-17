@@ -54,8 +54,20 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<Button>(R.id.btnLogout)?.setOnClickListener {
+            val intent = Intent(this, Login_Page::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            finish()
+        }
+
         findViewById<View>(R.id.cardLoan)?.setOnClickListener {
             val intent = Intent(this, LoanApplicationActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<View>(R.id.cardTrack)?.setOnClickListener {
+            val intent = Intent(this, TrackApplicationActivity::class.java)
             startActivity(intent)
         }
 

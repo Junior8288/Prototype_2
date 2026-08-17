@@ -190,6 +190,17 @@
                         android:text="Submit Registration"
                         android:textStyle="bold" />
 
+                    <TextView
+                        android:id="@+id/txtLoginBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="18dp"
+                        android:text="Already have an account? Login"
+                        android:textColor="#1769E0"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
