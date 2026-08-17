@@ -47,13 +47,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<Button>(R.id.btnRegister)?.let { btn ->
-            btnRegister = btn
-            btnRegister.setOnClickListener {
-                val intent = Intent(this, Register_Page::class.java)
-                startActivity(intent)
-            }
+        btnRegister = findViewById(R.id.btnRegister)
+
+        btnRegister.setOnClickListener {
+            val intent = Intent(this, Register_Page::class.java)
+            startActivity(intent)
         }
+
 
         findViewById<View>(R.id.main)?.let { mainView ->
             ViewCompat.setOnApplyWindowInsetsListener(mainView) { v, insets ->

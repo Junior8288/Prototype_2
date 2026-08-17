@@ -17,6 +17,7 @@ class Register_Page : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_register_page)
 
+        btnSubmitRegistration = findViewById(R.id.btnSubmitRegistration)
         btnSubmitRegistration.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
