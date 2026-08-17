@@ -189,10 +189,6 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
 
-            <!-- ========================= -->
-            <!-- SERVICES CARD -->
-            <!-- ========================= -->
-
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardServices"
                 android:layout_width="0dp"
@@ -345,24 +341,24 @@
                         android:id="@+id/txtContactDescription"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="5dp"
                         android:text="We're here to help. Contact us directly."
                         android:textColor="#718096"
                         android:textSize="14sp"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtNeedHelp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/txtNeedHelp" />
+                        app:layout_constraintEnd_toEndOf="parent" />
 
                     <Button
                         android:id="@+id/btnCall"
-                        android:layout_width="344dp"
-                        android:layout_height="37dp"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
                         android:layout_marginTop="14dp"
                         android:text="Call Us"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtContactDescription"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/txtContactDescription" />
-
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -379,6 +375,65 @@
                 app:layout_constraintTop_toBottomOf="@id/contactCard"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/policyCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="2dp"
+                app:layout_constraintTop_toBottomOf="@id/btnMap"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/policyTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Want to see our policy?"
+                        android:textColor="#172033"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/policyDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="View our policies and learn more about our services."
+                        android:textColor="#718096"
+                        android:textSize="14sp"
+                        app:layout_constraintTop_toBottomOf="@id/policyTxt"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <Button
+                        android:id="@+id/btnPolicy"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="14dp"
+                        android:text="View Policy"
+                        app:layout_constraintTop_toBottomOf="@id/policyDescription"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
